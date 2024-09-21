@@ -1,32 +1,92 @@
-header {
-    background-color: aqua;
-}
-
-main {
-    background-color: blueviolet ;
-}
-
 footer {
     background-color: rgb(133, 65, 20);
-    color: white;
-    padding: 20px 0;
-    font-size: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    /* Uma cor sólida que combina com o tema */
+    color: var(--letters-gray-color);
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: var(--font-titulo-servicos);
 }
 
 .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1350px;
-    margin: 0 auto;
-    margin-bottom: 0;
-    padding: 20px;
+    gap: 20px;
 }
 
-img {
-    display: none;
+/* Contatos e CTA */
+.footer-contact {
+    flex: 1;
+    text-align: left;
+
+    & h3 {
+        color: var(--cor-speacial);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        margin-bottom: 15px;
+    }
+
+    & .cta-button {
+        padding: 10px 20px;
+        background-color: var(--cor-speacial);
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    & .cta-button:hover {
+        background-color: #e6b529;
+    }
+}
+
+/* Redes sociais */
+.footer-social {
+    flex: 1;
+    text-align: center;
+
+    & h3 {
+        color: var(--cor-speacial);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    & a {
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
+
+    & a:hover {
+        transform: scale(1.2);
+    }
+
+    & img {
+        width: 30px;
+    }
+}
+
+/* Mapa */
+.footer-map {
+    flex: 1;
+    text-align: right;
+
+    & h3 {
+        color: var(--cor-speacial);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    & iframe {
+        width: 100%;
+        height: 150px;
+        border: none;
+    }
 }
