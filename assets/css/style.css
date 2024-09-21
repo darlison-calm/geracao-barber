@@ -6,12 +6,11 @@
   
 body {
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
 }
   
 :root {
     --cor-speacial: #f1cd30;
-    --background-gray-color: #f7f0f0;
+    --gray-letter: #f7f0f0;
     --font-titulo-servicos : 'Patua One', serif;
     --letters-gray-color: #444444;
 }
