@@ -1,0 +1,103 @@
+/* Mobile First */
+:root {
+    --fs: 30px;
+}
+footer {
+    background-color: #191919;
+    color: var(--white-letter);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Contatos */
+.footer-contact {
+
+    & h3 {
+        color: var(--white-letter);
+        font-size: 25px;
+        font-size: var(--fs);
+    }
+
+    & p {
+        margin-bottom: 18px;
+        margin-top: 30px;
+    }
+}
+
+/* Redes sociais */
+.footer-social {
+
+    & h3 {
+        color: var(--white-letter);
+        font-size: var(--fs);
+        margin-bottom: 20px;
+    }
+
+    & a {
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
+
+    & a:hover {
+        transform: scale(1.2);
+    }
+
+    & img {
+        width: 30px;
+    }
+}
+
+/* Mapa */
+.footer-map {
+
+    & h3 {
+        color: var(--white-letter);
+        font-size: var(--fs);
+        margin-bottom: 20px;
+    }
+
+    & iframe {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+        border: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 40px 20px;
+        background: #191919;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .footer-contact,
+    .footer-social,
+    .footer-map {
+        flex: 1;
+        text-align: center;
+    }
+    .footer-social img{
+        padding-top: 40px;
+    }
+}
