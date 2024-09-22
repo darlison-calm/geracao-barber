@@ -1,61 +1,48 @@
+/* Mobile First */
+:root {
+    --fs: 30px;
+}
 footer {
-    background-color: rgb(133, 65, 20);
-    /* Uma cor sólida que combina com o tema */
-    color: var(--letters-gray-color);
-    padding: 40px 20px;
+    background-color: black;
+    color: var(--white-letter);
+    padding: 20px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
     font-family: var(--font-titulo-servicos);
+    justify-content: center;
 }
 
 .footer-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
 }
 
-/* Contatos e CTA */
+/* Contatos */
 .footer-contact {
-    flex: 1;
-    text-align: left;
 
     & h3 {
-        color: var(--cor-speacial);
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+        color: var(--white-letter);
+        font-size: 25px;
+        font-size: var(--fs);
     }
 
     & p {
-        margin-bottom: 15px;
-    }
-
-    & .cta-button {
-        padding: 10px 20px;
-        background-color: var(--cor-speacial);
-        border-radius: 15px;
-        color: black;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    & .cta-button:hover {
-        background-color: #e6b529;
+        margin-bottom: 18px;
+        margin-top: 30px;
     }
 }
 
 /* Redes sociais */
 .footer-social {
-    flex: 1;
-    text-align: center;
 
     & h3 {
-        color: var(--cor-speacial);
-        font-size: 1.5rem;
+        color: var(--white-letter);
+        font-size: var(--fs);
         margin-bottom: 20px;
     }
 
@@ -75,18 +62,43 @@ footer {
 
 /* Mapa */
 .footer-map {
-    flex: 1;
-    text-align: right;
 
     & h3 {
-        color: var(--cor-speacial);
-        font-size: 1.5rem;
+        color: var(--white-letter);
+        font-size: var(--fs);
         margin-bottom: 20px;
     }
 
     & iframe {
         width: 100%;
+        max-width: 300px;
         height: 150px;
         border: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 40px 20px;
+        background: black;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .footer-contact,
+    .footer-social,
+    .footer-map {
+        flex: 1;
+        text-align: center;
+    }
+    .footer-social img{
+        padding-top: 40px;
     }
 }
