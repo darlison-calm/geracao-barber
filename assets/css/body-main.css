@@ -151,10 +151,7 @@ ul.slides-container {
   width: 100%;
   top: 0;
   left: 0;
-
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  transform: translateX(100%);
-  
+  transition: 0.5s;
   & h3 {
     color: var(--white-letter);
     font-size: 1.3rem;
@@ -176,11 +173,11 @@ ul.slides-container {
 
 .active-slide {
   opacity: 1;
-  transform: translateX(0); /* Centered in view */
+  
 }
 
 .prev-slide {
-  transform: translateX(0%); /* Off-screen to the left */
+  opacity: 0;
 }
 
 
@@ -281,10 +278,4 @@ ul.slides-container {
   100% { opacity: 1; }
 }
 
-@keyframes slide {
-  100% { left: 0;}
-}
 
-@-webkit-keyframes slide {
-  100% { left: 0;}
-}
