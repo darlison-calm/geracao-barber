@@ -1,0 +1,175 @@
+header {
+  width: 100%;
+  height: 16vh;
+  background: #191919;
+  padding: 1vw 0;
+}
+
+.menu {
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+}
+
+.logo {
+  width: 100%;
+  height: 15vh;
+  transition: all 1s ease;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu .lista-menu {
+  display: flex;
+  list-style: none;
+  gap:25px;
+  align-items: center;
+}
+
+.menu .lista-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  transition: 2ms ease-in;
+  position: relative;
+}
+
+.menu .lista-menu a::before{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: wheat;
+  transition: all 1s ease;
+}
+
+.menu .lista-menu a::after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: wheat;
+  transition: all 1s ease;
+
+}
+
+.menu .lista-menu a:hover::before {
+  width: 100%;
+  background-color: royalblue;
+}
+
+.menu .lista-menu a:hover::after {
+  width: 100%;
+  background-color: red;
+}
+
+
+@media screen and (max-width:500px) {
+  header {
+    height: 42vh;
+  }
+
+  .menu {
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .menu .lista-menu {
+    gap:15px;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .menu .lista-menu li{
+    border: 1px solid white;
+    padding: 1.5px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .menu .lista-menu a:hover::before {
+    width: 0%;
+  }
+  
+  .menu .lista-menu a:hover::after {
+    width: 0%;
+  }
+
+} 
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 15vh;
+  }
+
+  .menu {
+    justify-content: space-between;
+    padding: 0 40px;
+    font-size: 15px;
+  }
+
+  .logo {
+    height: 10vh;
+    padding: 2px;
+  }
+
+  .menu .lista-menu li{
+    border: none;
+    padding:0;
+  }
+  
+  .menu .lista-menu a:hover::before {
+    width: 0%;
+  }
+  
+  .menu .lista-menu a:hover::after {
+    width: 0%;
+  }
+} 
+
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    height: 16vh;
+    background: #191919;
+    padding: 1vw 0;
+  }
+
+  .menu {
+    justify-content: space-around;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 12vh;
+    padding: 2px;
+  }
+
+  .menu .lista-menu li{
+    border: none;
+    padding:0;
+  }
+  
+
+  .menu .lista-menu a:hover::before {
+    width: 100%;
+    background-color: royalblue;
+  }
+  
+  .menu .lista-menu a:hover::after {
+    width: 100%;
+    background-color: red;
+  }
+  
+}
