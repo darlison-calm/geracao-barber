@@ -4,7 +4,7 @@
 
   height:  90vh;
 
-  background: linear-gradient(rgba(16, 16, 16, 0.541), rgba(17, 17, 17, 0.5)), url("/assets/images/body-main/background-image.jpg");
+  background: linear-gradient(rgba(16, 16, 16, 0.541), rgba(17, 17, 17, 0.5)), url("../images/body-main/background-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 }
 
 .about-section {
-  background: linear-gradient(rgba(16, 16, 16, 0.781), rgba(17, 17, 17, 0.692)), url("/assets/images/body-main/background-sobre.jpg");
+  background: linear-gradient(rgba(16, 16, 16, 0.781), rgba(17, 17, 17, 0.692)), url("../images/body-main/background-sobre.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
