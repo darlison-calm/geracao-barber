@@ -151,7 +151,7 @@ ul.slides-container {
   width: 100%;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: s;
   & h3 {
     color: var(--white-letter);
     font-size: 1.3rem;
